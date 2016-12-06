@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-  <script type="text/javascript" src="quiz.js"></script>
-  <title>Video Game Trivia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz_models.js"></script>
+    <title>Easy quiz</title>
 </head>
+
 <body>
-<div class="grid">
-  <div id="quiz">
+  <header>Easy Trivia</header>
+  <div id="apiQuestions"></div>
 
-    <h1>Video Game Trivia!</h1>
+  <div id="true"><button id='trueButton'></button></div>
+  <div id="false"><button id='falseButton'></button></div>
 
-    <p id="question"></p>
+  <div id="answer"></div>
 
-    <div class="buttons">
-      <button id="btn0"><span id="choice0"></span></button>
-      <button id="btn1"><span id="choice1"></span></button>
-      <button id="btn2"><span id="choice2"></span></button>
-      <button id="btn3"><span id="choice3"></span></button>
-    </div>
-  </div>
-</div>
+    <p id='instructions'>INSTRUCTIONS</p>
 
 </body>
+
 </html>
