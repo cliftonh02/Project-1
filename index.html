@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
 
 <head>
     <meta charset="UTF-8">
@@ -7,21 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="quiz_models.js"></script>
-    <title>Easy quiz</title>
-</head>
+    <script src="trivia-controller.js"></script>
+    <title>Video Game Trivia</title>
+  </head>
+  <body>
+     <div class="quizContainer">
 
-<body>
-  <header>Easy Trivia</header>
-  <div id="apiQuestions"></div>
+      <h1>Video Game Trivia!</h1>
 
-  <div id="true"><button id='trueButton'></button></div>
-  <div id="false"><button id='falseButton'></button></div>
+      <div class="question">What game is Mario from?</p>
 
-  <div id="answer"></div>
+        <div class="question"></div>
+         <ul class="choiceList"></ul>
+         <div class="quizMessage"></div>
+         <div class="result"></div>
+         <div class="nextButton">Next Question</div>
 
-    <p id='instructions'>INSTRUCTIONS</p>
-
-</body>
+  </body>
 
 </html>
