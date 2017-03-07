@@ -6,22 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="JS/jsquiz.js"></script>
+    <link rel="stylesheet" href="css/newstyle.css">
     <script src="trivia-controller.js"></script>
     <title>Video Game Trivia</title>
   </head>
   <body>
-     <div class="quizContainer">
+    <h2 class="quizHeader">Video Game Trivia, Let's Play!</h2>
 
-      <h1>Video Game Trivia!</h1>
+  	<table style="width:583px">
+  	<tr>
+  	  <td>
+  	  	<div>
+  	  		<p class="question">1. What is Super Mario's 2nd Profession?</p>
 
-      <div class="question">What game is Mario from?</p>
+  	    	<ul>
+  	    	<input class="answer" type="radio" name="q1" value="1">
+  	        <label id="correctString1">Doctor</label>
+  	    	<br>
+  	        <input class="answer" type="radio" name="q1" value="0">
+  	        <label>Pro Skater</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q1" value="0">
+  	        <label>Shoe Salesman</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q1" value="0">
+  	        <label>Postman</label>
+      		</ul>
+  	  	</div>
+  	  </td>
+  	  <td>
+  	  	<div>
+  	  		<p class="question">2. "Guile" is a character from which popular fighting game?</p>
 
-        <div class="question"></div>
-         <ul class="choiceList"></ul>
-         <div class="quizMessage"></div>
-         <div class="result"></div>
-         <div class="nextButton">Next Question</div>
+  	    	<ul>
+  	        <input class="answer" type="radio" name="q2" value="0">
+  	        <label>Metal Gear Solid</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q2" value="1">
+  	        <label id="correctString2">Street Fighter</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q2" value="0">
+  	        <label>Tekkan</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q2" value="0">
+  	        <label>Kung Fu</label>
+  	    	</ul>
+  	  	</div>
+  	  </td>
+  	</tr>
+  	<tr>
+  	  <td>
+  	  	<div>
+  	  		<p class="question">3. What is the name of the "Yellow mouse" from Pokemon?</p>
+
+  	    	<ul>
+  	        <input class="answer" type="radio" name="q3" value="0">
+  	        <label>Mickey Mouse</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q3" value="1">
+  	        <label id="correctString3">Pikachu</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q3" value="0">
+  	        <label>Digimon</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q3" value="0">
+  	        <label>Charmander</label>
+  	    	</ul>
+  		</div>
+  	  </td>
+  	  <td>
+  	  	<div>
+  	  		<p class="question">4. Donkey Kong has a side-kick, what is his name?</p>
+
+  	    	<ul>
+  	        <input class="answer" type="radio" name="q4" value="0">
+  	        <label>Balrog Kong</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q4" value="1">
+  	        <label id="correctString4">Diddy Kong</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q4" value="0">
+  	        <label>Funky Kong</label>
+  	        <br>
+  	        <input class="answer" type="radio" name="q4" value="0">
+  	        <label>Monkey Kong</label>
+      		</ul>
+  	  	</div>
+  	  </td>
+  	</tr>
+  	</table>
+  <br/>
+    <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+            type="submit" value="Submit" />
+      </div>
+
+  <!--show only wrong answers on submit-->
+      <div class="quizAnswers" id="correctAnswer1"></div>
+  	    <div class="quizAnswers" id="correctAnswer2"></div>
+      <div class="quizAnswers" id="correctAnswer3"></div>
+      <div class="quizAnswers" id="correctAnswer4"></div>
+
+  <!--show score upon submit-->
+      <div>
+      	<h2 class="quizScore" id="userScore"></h2>
+      </div>
+  	</div>
 
   </body>
 
