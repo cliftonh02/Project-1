@@ -8,4 +8,4 @@ The app can successfully render in a browser like "Chrome" and utilizes DOM Mani
 
 I plan to update this in the future to incorporate more functionality such as a timer, the ability to choose teams and more questions. I am also interested in allowing the game to make AJAX calls to a web API and pull questions from the Web.
 
-<a href="project1/screenshot.png">Trivia Game</a>
+<img src="project1/screenshot.png">Trivia Game
